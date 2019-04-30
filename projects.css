@@ -1,0 +1,178 @@
+
+.maindiv
+{
+    background-color: #282C34;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.banner
+{
+    position: absolute;
+    left:8px;
+    top: 8px;
+    width: 681px;
+    height: 42px;
+    background-image: url("banner.png");
+}
+
+.linkpanel
+{
+    cursor: pointer;
+    cursor: hand;
+    color:#ffffff;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.contentdiv
+{
+    position: absolute;
+    color: #000000;
+    left: 16px;
+    right: 16px;
+    top: 58px;
+    bottom: 16px;
+    font-family: Courier, monospace;
+    font-weight: bold;   
+    background-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    overflow: auto;
+    padding: 8px;
+}
+
+A:link {text-decoration: none; color:#FFFFFF; outline : none; border : 0;}
+A:visited {text-decoration: none; color:#FFFFFF; outline : none; border : 0;}
+A:active {text-decoration: none; color:#FFFFFF; outline : none; border : 0;}
+A:hover {text-decoration: underline; color:#FFFFFF; outline : none; border : 0;}
+
+.button
+{
+    cursor: pointer;
+    cursor: hand;
+    text-align: center;
+    overflow: hidden;
+    /*margin:8px;*/
+    border-radius: 4px 4px 4px 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    padding: 2px;
+    border: solid 1px #808080;
+    height: 20px;
+	line-height: 20px;
+    color: #404040;
+    background: linear-gradient(#ffffff, #C0C0D0);
+}
+
+.button:hover
+{
+    background: linear-gradient(#ffffff, #D0D0F0);
+}
+
+.button:active
+{
+	box-shadow: inset 1px 1px 1px #808080;
+    background: linear-gradient(#ffffff, #A0A0F0);
+}
+
+.roundcorners
+{
+	background: #FFFFFF;
+	border:1px solid #808080;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.label
+{
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    overflow: hidden;
+    color: #404040;
+    margin:4px;
+}
+
+.labelbold
+{
+    font-weight: bold;
+}
+
+table
+{
+    border-width: 0px;
+}
+
+td
+{
+    border-width: 0px;
+    padding:0px;
+}
+
+tr
+{
+    border-width: 0px;
+    padding:0px;
+}
+
+th
+{
+    border-width: 0px;
+    padding:0px;
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    overflow: hidden;
+    color: #404040;
+    margin:4px;
+    font-weight: bold;
+}
+
+hr
+{
+    height:1px;
+}
+
+input[type=text]
+{
+    border:1px solid #808080;
+}
+
+input[type=number]
+{
+    border:1px solid #808080;
+}
+
+.red
+{
+	color: #FF0000;
+}
+
+.green
+{
+	color: #00C000;
+}
+
+.redbg
+{
+	background-color: #FF0000;
+}
+
+.greenbg
+{
+	background-color: #00C000;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 132px 132px;
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+	margin: 4px;
+}

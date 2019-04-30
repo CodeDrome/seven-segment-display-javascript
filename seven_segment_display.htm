@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Code in JavaScript - Seven Segment Display</title>
+    <meta charset="utf-8" />
+    <link href="projects.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<div class="maindiv">
+		<div class="banner"></div>
+		<div class="linkpanel"><a href="http://www.code-in-javascript.com" target="_blank">code-in-javascript.com</a></div>
+
+		<div class="contentdiv" id="maindiv">
+
+        	<div class="roundcorners" style="position: absolute; width:256px; left:8px; top:8px; bottom: 8px; overflow: auto;">
+			<table style="width:100%;">
+            	<tr>
+                    <td><div class="label">Number of Digits</div></td>
+                    <td><input type="number" min="1" max="12" id="udNumberOfDigits" style="margin:4px; width:64px" value="8" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Number of Decimal Places</div></td>
+                    <td><input type="number" min="0" max="10" id="udNumberOfDecimalPlaces" style="margin:4px; width:64px" value="2" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Decimal Point Type: Floating</div></td>
+                    <td><input type="radio" value="Floating" name="rdoDecimalPointType" id="rdoDecimalPointTypeFloating" checked style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Decimal Point Type: Fixed</div></td>
+                    <td><input type="radio" value="Fixed" name="rdoDecimalPointType" id="rdoDecimalPointTypeFixed" style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Value</div></td>
+                    <td><input type="number" step="any" id="udValue" style="margin:4px; width:64px" value="0" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: LCD</div></td>
+                    <td><input type="radio" value="LCD" name="rdoColorScheme" id="rdoColorSchemeLCD" checked style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: Green</div></td>
+                    <td><input type="radio" value="Green" name="rdoColorScheme" id="rdoColorSchemeGreen" style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: Orange</div></td>
+                    <td><input type="radio" value="Orange" name="rdoColorScheme" id="rdoColorSchemeOrange" style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: Blue</div></td>
+                    <td><input type="radio" value="Blue" name="rdoColorScheme" id="rdoColorSchemeBlue" style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: Sky</div></td>
+                    <td><input type="radio" value="Sky" name="rdoColorScheme" id="rdoColorSchemeSky" style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: Red</div></td>
+                    <td><input type="radio" value="Red" name="rdoColorScheme" id="rdoColorSchemeRed" style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Background Color</div></td>
+                    <td><input type="color" id="colBackgroundColor" style="margin:4px; width:64px" value="#E0E0E0" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Lit Segment Color</div></td>
+                    <td><input type="color" id="colLitSegmentColor" style="margin:4px; width:64px" value="#202020" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">UnlitSegmentColor</div></td>
+                    <td><input type="color" id="colUnlitSegmentColor" style="margin:4px; width:64px" value="#D0D0D0" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><div id="btnStart" class="button">Start</div></td>
+                </tr>
+
+            </table>
+    		</div>
+
+        	<div class="roundcorners" style="position: absolute; left: 272px; top: 8px; right: 8px; bottom: 8px; overflow:auto;">
+
+            	<svg id="SVGSSD"
+                	style="position: absolute; border: 0px solid; left: 8px; top:8px;"
+                	height="200"
+                	width="600"
+                	xmlns="http://www.w3.org/2000/svg"
+                	xmlns:xlink="http://www.w3.org/1999/xlink">
+            	</svg>
+
+        	</div>
+		</div>
+
+	</div>
+
+    <script src="seven_segment_display.js"></script>
+    <script src="seven_segment_display_page.js"></script>
+
+</body>
